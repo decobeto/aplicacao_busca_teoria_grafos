@@ -16,12 +16,12 @@ public class App {
         graph.add(new Vertex("4"));
         graph.add(new Vertex("5"));
         
-        graph.get(2).addNeighbor(graph.get(3));
-        graph.get(3).addNeighbor(graph.get(1));
-        graph.get(4).addNeighbor(graph.get(0));
-        graph.get(4).addNeighbor(graph.get(1));
-        graph.get(5).addNeighbor(graph.get(0));
-        graph.get(5).addNeighbor(graph.get(2));
+        graph.get(0).addNeighbor(graph.get(3));
+        graph.get(1).addNeighbor(graph.get(3));
+        graph.get(1).addNeighbor(graph.get(4));
+        graph.get(2).addNeighbor(graph.get(4));
+        graph.get(4).addNeighbor(graph.get(5));
+        graph.get(3).addNeighbor(graph.get(5));
         
         for(int i=0; i<graph.size(); i++){
             if(!graph.get(i).isVisited()){
