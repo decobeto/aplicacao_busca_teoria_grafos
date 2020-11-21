@@ -33,7 +33,7 @@ public class FileReader {
                 }
             }
             
-            scanner.close();
+           scanner.close();
             
         } catch (Exception e){
             e.printStackTrace();
